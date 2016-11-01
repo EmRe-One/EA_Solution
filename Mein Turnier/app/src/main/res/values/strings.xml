@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">MeinTurnier</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_save">Speichern</string>
+
+
+    <string name="snack_bar_text_item_removed">1 item removed</string>
+    <string name="snack_bar_text_group_item_removed">1 group item removed</string>
+    <string name="snack_bar_text_child_item_removed">1 child item removed</string>
+    <string name="snack_bar_text_button_clicked">Button clicked! (position = %1$d)</string>
+    <string name="snack_bar_action_undo">UNDO</string>
+
+    <string name="dialog_message_item_pinned">Item pinned! (position = %1$d)</string>
+    <string name="dialog_message_group_item_pinned">Group item pinned! (group = %1$d)</string>
+    <string name="dialog_message_child_item_pinned">Child item pinned! (group = %1$d, child = %2$d)</string>
+    <string name="title_activity_turnier">TurnierActivity</string>
+
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    
+    <string-array name="turniertyp">
+        <item>Gruppe + KO-System</item>
+        <item>Gruppen</item>
+        <item>Liga</item>
+        <item>KO-System</item>
+    </string-array>
+    
+</resources>

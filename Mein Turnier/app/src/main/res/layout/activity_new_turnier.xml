@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="tr.easolution.meinturnier.newTurnierActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/create_new_turnier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_send"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_anchor="@+id/login_form"
+        app:layout_anchorGravity="bottom|center"
+        android:tint="@color/white" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/pattern"
+        android:tileMode="repeat">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:elevation="8dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="30dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="91dp"
+                    android:layout_height="91dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_logo"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="Neues Turnier erstellen"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+
+                <!-- new turnier Label -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textInput_turnier_name">
+
+                    <EditText
+                        android:id="@+id/edt_new_turnier"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Namen"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/colorPrimary"
+                        android:singleLine="true"
+                        android:layout_weight="1" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!-- spinner Label -->
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/sp_turniertyp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"/>
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:onClick="onRadioButtonClicked">
+                    <RadioButton
+                        android:text="Hinrunde"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbtn_hin"
+                        android:hint="Hinrunde"
+                        android:textAllCaps="false"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:text="Hin- und Rückrunde"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbtn_hinrueck" />
+                </RadioGroup>
+
+
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/commonListItemStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_menu_gallery"
+            android:layout_gravity="top|start"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_turnier_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|start"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                tools:ignore="RtlHardcoded"
+                tools:text="TurnierName"
+                android:textAlignment="center"
+                android:paddingTop="15dp"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                android:longClickable="false"
+                android:password="false"
+                android:phoneNumber="false"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/txt_turnier_typ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:gravity="bottom|center"
+                tools:ignore="RtlHardcoded"
+                tools:text="TurnierTyp"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/drag_handle"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|end"
+            android:background="@drawable/ic_dehaze"
+            android:longClickable="false"
+            android:scaleX="0.5"
+            android:scaleY="0.5" />
+
+
+    </FrameLayout>
+
+</FrameLayout>
