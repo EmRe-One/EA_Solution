@@ -1,9 +1,0 @@
-package tr.easolution.recyclerview.swipeable.action;
-
-import tr.easolution.recyclerview.swipeable.RecyclerViewSwipeManager;
-
-public abstract class SwipeResultActionMoveToSwipedDirection extends SwipeResultAction {
-    public SwipeResultActionMoveToSwipedDirection() {
-        super(RecyclerViewSwipeManager.AFTER_SWIPE_REACTION_MOVE_TO_SWIPED_DIRECTION);
-    }
-}
