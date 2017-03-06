@@ -1,5 +1,4 @@
-# MyTournament
+# EA_Solution
 
 ### Android Project
-- Benutzer kann Turnier erstellen
-- In bearbeitung
+Auf dieser Seite befinden sich einige Beispiel-Projekte für Android
